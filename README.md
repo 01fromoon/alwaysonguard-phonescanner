@@ -19,9 +19,12 @@ Easily analyze phone numbers, get instant details & quick links for open-source 
 
 ### ⬇️ Installation
 
-```bash
-pip install phonenumbers colorama
-```
+1. Download the repository files.
+2. Install the dependencies with:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ### ▶️ Usage
 
@@ -89,13 +92,14 @@ Telefon numaralarını kolayca analiz et, anında detaylara ulaş, OSINT araşt�
 
 ---
 
-## 🚀 Başlangıç
+## 🚀 Kurulum
 
-### ⬇️ Kurulum
+1. Depo dosyalarını indir.
+2. Bağımlılıkları yüklemek için:
 
-```bash
-pip install phonenumbers colorama
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ### ▶️ Kullanım
 
