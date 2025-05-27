@@ -32,13 +32,12 @@ def save_to_json(number, lang, valid, country, operator):
     with open(LOG_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-# Koyu yeşilden açık yeşile doğru ANSI renk kodları (256 renk desteği olan terminaller için)
 GREEN_SHADES = [
-    "\033[38;5;22m",  # Dark Green
+    "\033[38;5;22m",  
     "\033[38;5;28m",
     "\033[38;5;34m",
     "\033[38;5;40m",
-    "\033[38;5;46m",  # Light Green
+    "\033[38;5;46m",  
 ]
 
 BANNER_LINES = [
@@ -177,10 +176,8 @@ def main():
                 continue
             info = get_phone_info(phone_number, user_lang)
             print_info(info, user_lang)
-            # OSINT Linklerini göster
             osint_links = generate_osint_links(phone_number)
             print_osint_links(osint_links, user_lang)
-            # JSON'a kaydet
             if "error" not in info:
                 save_to_json(
                     phone_number,
